@@ -1,0 +1,29 @@
+<div class="sale-content">
+    <div class="container glass">
+        <div class="title">
+            <h2>Sale</h2>
+        </div>
+        <div class="func">
+            <select
+            @change="select">
+            <option 
+                value =0
+                hidden
+                selected>
+                Please Select
+            </option>
+            <option 
+                v-for="(option, index) in options"
+                :key= "index"
+                :label="option.label"
+                :value="option.value">
+            </option>
+        </select>              
+        </div>
+        <div class="chart">
+            <bar-chart
+            :data="trends"
+            :name="name"/>
+        </div>
+    </div>
+</div>

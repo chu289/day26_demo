@@ -1,0 +1,92 @@
+.main-header{
+    /* background-color: brown; */
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.main-header .left{
+    position: absolute;
+    left: 5em;
+    display: flex;
+}
+.main-header .left h2{
+    color: #F1F6F9;
+}
+.main-header .left form{
+    display: flex;
+    margin-left: 5em;
+    width: 25em;
+    height: 2.5em;
+    border-radius: 200px;
+    background-color: #394867;
+
+}
+.main-header .left input,
+.main-header .left button{
+    background-color: transparent;
+    border: none;
+}
+.main-header .left input{
+    width: 19em;
+    color: #F1F6F9;
+    font-size: 18px;
+    padding: 1em;
+}
+.main-header .left input:focus{
+    outline: none;
+}
+.main-header .left button{
+    width: 2em;
+    font-size: 25px;
+    color: #F1F6F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.main-header .right{
+    position: absolute;
+    right: 5em;
+    display: flex;
+}
+.main-header .right button{
+    height: 50px;
+    width: 50px;
+    background-color: #394867;
+    color: #F1F6F9;
+    border-radius: 50%;
+    border: none;
+    font-size: 35px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-header .right .user{
+    display: flex;
+    align-items: center;
+    margin-left: 3em;
+    color: #F1F6F9;
+    cursor: pointer;
+}
+
+.main-header .right .user .pic{
+    height: 50px;
+    width: 50px;
+    background-color: burlywood;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotate(-10deg);
+    margin-right: .5em;
+}
+.main-header .right .user .pic img{
+    width: 100%;
+    vertical-align: middle;
+}

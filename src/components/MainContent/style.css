@@ -1,0 +1,192 @@
+.main-content{
+    position: fixed;
+    top: 10vh;
+    left: 5em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.main-content .center{
+    height: 85vh;
+    width: 65vw;
+    margin: 2vh 2vw;
+    position: relative;
+}
+.main-content .center .header{
+    display: flex;
+    position: relative;
+    top: 3em;
+    color: #F1F6F9;
+    align-items: center;
+}
+.main-content .center .header .title{
+    position: absolute;
+    left: 1em;
+    font-size: 35px;
+}
+.main-content .center .header .group{
+    display: flex;
+    text-align: center;
+    position: absolute;
+    right:  1em;
+}
+.main-content .center .header .group h2 {
+    font-size: 35px;
+    margin: 0 .5em;
+}
+.main-content .center .header .group h2 small{
+    display: flex;
+    font-size: 20px;
+    font-weight: 300;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content .center .header .group .bx{
+    margin-left: 5px;
+}
+.main-content .center .header .group .green{
+    color: green;
+}
+.main-content .center .header .group .red{
+    color: red;
+}
+.main-content .center .header .group .blue{
+    color: blue;
+}
+
+
+
+
+.main-content .center .content{
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    top: 8em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.main-content .center .box{
+    margin: 2vh 1vw;
+}
+.main-content .center .box .pinned{
+    position: relative;
+    width: 14em;
+    height: 2vh;
+}
+.main-content .center .box .pinned .bx{
+    position: absolute;
+    left: 55%;
+    top: 0px;
+    transform: rotate3d(1, 1, 5, 45deg);
+    font-size: 2em;
+    color: #14274E;
+    z-index: 2;
+}
+.main-content .center .box .note{
+    width: 14em;
+    height: 12em;
+    border-bottom-right-radius: 25px; 
+    overflow: hidden;
+    box-shadow: 29px 34px 36px -26px rgba(0, 0, 0, .5);
+    position: relative;
+}
+
+.main-content .center .box .note::before,
+.main-content .center .box .note::after{
+    content: '';
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    width: 30px;
+    height: 30px;
+    box-shadow: 0px 5px 35px rgba(0, 0, 0, .5);
+    transform: skew(-5deg) rotate(-3deg);
+}
+.main-content .center .box .note::after{
+    right: -5px;
+    bottom: -5px;
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, .5);
+    transform: skew(3deg) rotate(0deg);
+} 
+
+.main-content .center .one .note{
+    background-color: #28DF99;
+}
+
+.main-content .center .two .note{
+    background-color: #99F3BD;
+}
+.main-content .center .three .note{
+    background-color: #D2F6C5;
+}
+.main-content .center .four .note{
+    background-color: #F6F7D4;
+}
+.main-content .center .five .note{
+    background-color: #867AE9;
+}
+.main-content .center .six .note{
+    background-color: #FFF5AB;
+}
+.main-content .center .seven .note{
+    background-color: #FFCEAD;
+}
+.main-content .center .eight .note{
+    background-color: #C449C2;
+}
+
+.main-content .center .note .text{
+    margin: .5em 0;
+    padding: .5em;
+    text-align: center;
+}
+.main-content .center .note .text .date{
+    font-size: 18px;
+    margin-bottom: .3em;
+}
+.main-content .center .note .text .name{
+    font-size: 22px;
+    margin-bottom: .2em;
+}
+.main-content .center .note .text .phone{
+    font-size: 20px;
+}
+.main-content .center .note .text  .list{
+    margin: 1em 0 0 1em;
+    list-style:square;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.main-content .right{
+    height: 85vh;
+    width: 25vw;
+    margin: 2vh 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    color: #F1F6F9;
+}
+.main-content .glass{
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, .1),
+        rgba(255, 255, 255, .3),
+        rgba(255, 255, 255, .3),
+        rgba(255, 255, 255, .1)
+    );
+}

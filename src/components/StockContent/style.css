@@ -1,0 +1,57 @@
+.stock-content{
+    position: fixed;
+    top: 10vh;
+    left: 5em;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.stock-content .title{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    font-size: 28px;
+    color: #F1F6F9;
+}
+.stock-content .glass{
+    height: 85vh;
+    width: 92vw;
+    margin: 2vh 2vw;
+    position: relative;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, .1),
+        rgba(255, 255, 255, .3),
+        rgba(255, 255, 255, .3),
+        rgba(255, 255, 255, .1)
+    );
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.stock-content .kind{
+    height: 300px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 0 10px; */
+    position: relative;
+    margin: 0 10px;
+}
+
+.stock-content .kind-title{
+    position: absolute;
+    top: 50%;
+    font-size: 28px;
+    font-weight: 700;
+    color: #F1F6F9;
+}
+
+.stock-content #doughnut-chart{
+    width: 550px;
+    height: 300px;
+}
